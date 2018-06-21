@@ -1,0 +1,19 @@
+<h1> Student information</h1>
+
+<%= form_for @student do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :usn %>
+		<%= f.text_field :usn %>
+	</p>
+	<p>
+		<%= f.label :place %>
+		<%= f.text_area :place %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+	<% end %>
